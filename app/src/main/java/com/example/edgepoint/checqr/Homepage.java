@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class Homepage extends AppCompatActivity {
-
+    //This is a Home Page
     String UserAccess;
 
     @Override
