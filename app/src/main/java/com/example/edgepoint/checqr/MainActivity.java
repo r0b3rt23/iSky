@@ -29,7 +29,7 @@ import java.util.List;
 
 
 public class MainActivity extends BaseActivity {
-
+//bok
     private static final String TAG = MainActivity.class.getSimpleName();
     private DecoratedBarcodeView barcodeView;
     private BeepManager beepManager;
