@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="700dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/Bscanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/isky_header" />
+
+    <Button
+        android:id="@+id/Bscanner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/home_scanner"
+        android:onClick="onClick"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="Scanner"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Bgraph"
+        app:layout_constraintEnd_toStartOf="@+id/Battendees"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/Battendees"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/home_list"
+        android:onClick="onClick"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="Attendees"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Bscanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Bscanner"
+        app:layout_constraintTop_toTopOf="@+id/Bscanner" />
+
+    <Button
+        android:id="@+id/Bsettings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/home_settings"
+        android:onClick="onClick"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="Settings"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Bgraph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Bgraph"
+        app:layout_constraintTop_toTopOf="@+id/Bgraph" />
+
+    <Button
+        android:id="@+id/Bgraph"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:drawableTop="@drawable/home_graph"
+        android:onClick="onClick"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="Graph"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Bsettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bscanner" />
+
+</android.support.constraint.ConstraintLayout>
