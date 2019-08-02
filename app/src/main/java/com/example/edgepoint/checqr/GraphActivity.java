@@ -29,6 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GraphActivity extends BaseActivity{
+    //This is Graph Activity
     ListView cityList,barangayList,precinctList;
     Spinner barangay_spinner, precinct_spinner;
     public static String Bgypsin;
