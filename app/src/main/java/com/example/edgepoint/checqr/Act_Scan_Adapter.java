@@ -24,6 +24,8 @@ public class Act_Scan_Adapter extends ArrayAdapter<String> {
         this.scan=scan;
         this.imgidAS=imgidAS;
     }
+    
+    //add comment
 
     public View getView(int position,View view,ViewGroup parent) {
         LayoutInflater inflater=context.getLayoutInflater();
